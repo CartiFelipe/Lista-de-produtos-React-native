@@ -17,6 +17,8 @@ const style = StyleSheet.create({
     padding: 10,
     borderBlockColor: "black",
     borderWidth: 1,
+
+    borderRadius: 10,
   },
   text: {
     fontSize: 20,

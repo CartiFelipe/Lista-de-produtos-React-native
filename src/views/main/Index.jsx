@@ -22,7 +22,13 @@ const Index = () => {
 
   return (
     <View>
-      {screen === 1 && <Products products={products} setProducts={setProducts} />}
+      {screen === 1 && (
+        <Products
+          products={products}
+          setProducts={setProducts}
+          handleAdd={() => setScreen(2)}
+        />
+      )}
       {screen === 2 && <ProductLog handleSubmit={submit} />}
     </View>
   );
